@@ -1,41 +1,43 @@
 # MIST4610-Project-1
 
 ## Team Name: 
-21479 Group 1 
+61608 Group 5 
 
 ## Team Members:
 
-1. Nicholas Price [@nickprice347](https://www.github.com/nickprice347)
-2. Albert Sun [@angelmarsh](https://www.github.com/apm83682)
-3. Haley Ford [@rileydoggett](https://www.github.com/RileyDoggett)
-4. Sydney Seid [@ripleykurtz](https://www.github.com/RipleyKurtz)
-5. Avanish Thota [@sequoyethsimpson](https://www.github.com/quoysimpson)
-6. Manafie Kabir
+1. Nicholas Price [@nicholasprice](https://www.github.com/nickprice347)
+2. Albert Sun [@albertsun](https://www.github.com/Glockgeta)
+3. Haley Ford [@haleyford](https://www.github.com/HaleyFord)
+4. Sydney Seid [@sydneyseid](https://www.github.com/sydneyseid)
+5. Avanish Thota [@avanishthota](https://www.github.com/avanish-thota27)
+6. Manafie Kabir [@manafiekabir](https://www.github.com/manafiekabir)
 
 ## Problem Description:
 
 The current scenario involves creating a relational database for a tennis club to ensure all data is properly allocated, and the business runs smoothly and efficiently. The majority of the model is centered around the entity “Members”. Members are at the forefront of the business since they determine which transactions take place, what divisions and leagues to join, what courts to reserve in conjunction with the coaches, which coaching programs to be a part of, and more. In addition to members, the club also employs a variety of general staff employees who can fulfill maintenance requests on various courts. The goal of the model is to accurately use and generate data, show the relationships between the various entities, and allow for queries to promptly be asked and solved to easily allow the analysis of data.
 
-## Data Model
 
-Explanation of data model: 
+##Explanation of our data model: 
 
-Our model is based on the structure of a hypothetical vacation resort. 
-The department entity is representative of a department (Finance, Human Resources, Food & Beverage, etc.) inside a resort location. Inside of this department, there are many employees, and this is represented by the one to many relationship we have placed between the Department and Employees entities. 
+![ourClientsResponseimage](https://github.com/nickprice347/MIST4610-Project-1/assets/163012519/ac31fd9e-b18b-409f-bef1-92db0003b880)
 
-There are also many employees inside of the hotel portion of the resort, which is why we established a one to many relationship between the Hotel and Employees tables as well. 
+*Numbers Match Up With Our Client’s Points*
+Our model is structured around a tennis club and its various entities are representative of key daily functions. The members entity is a key aspect of our model, and therefore is present in multiple different relationships. 
+& 2. 
+Starting with entities one and two from our client, we created a many to many relationship between members and courts. Members can reserve many courts and courts can have multiple members present on them. The many to many relationship resulted in an associative entity, court reservations. 
+3.
+Next, members can belong to many coaching programs and coaching programs have multiple members present in them. These two entities form an associative entity, sessions. Coaching programs and members may also at times have no sessions. 
+Additionally, the coaching programs are led by coaches. Coaches have a one to many relationship with coaching programs, as one coach can teach many coaching programs, but a coaching program can only be led by one coach at a time. 
+Additionally, the coaches entity has a one to many relationship with the court reservation entity as a coach can make multiple court reservations, but a reservation can only belong to one coach.  
+4. 
+ Members can belong to many tennis leagues, and a tennis league is made up of many members. These two entities have a many to many relationship, which results to an associative entity divisions. 
+5.
+	The Pro Shop Inventory entity can belong to many transactions, and the transactions can consist of multiple pro shop items. These two entities resulted in an associative entity, transaction details. 
+	Additionally, members can make multiple transactions from the proshop, but a singular transaction can only belong to one member. 
+6. & 7. 
+	Our general staff entity can perform maintenance on multiple courts, and each court can have multiple faculty working on its upkeep. Thus an associative entity maintenance request is created to symbolize this many to many relationship. 
 
-There are two branches that come from the Hotel table. First, the Dining table represents all of the restaurants in the hotel. This table includes the revenue of the restaurant, the hours they are open, the dress code, and more.
- Restaurants in the Dining table have many reservations made by different guests of the resort, so there is a one to many relationship between the Dining entity and the DiningReservation entity. 
- 
-On the other branch off of the Hotel table, there is the Room table. This simply contains all of the rooms inside each hotel. Because a guest can book many rooms, and rooms can be booked by many guests, we created an associative entity between Room and Guests called RoomReservation.
- The RoomReservation table allows the user to see which guests are in which room, when they check in, when they check out, and other information on the room. 
- 
-There are various activities in the resort as well, and we’ve shown this by including an Activities table. The Activities table shows the price of the activity, its description, and the activity name. Guests may reserve many activities and activities can be reserved by many guests, so because of this we created an ActivityReservation table as the associative entity between Guests and Activity. 
-ActivityReservation contains the activity time, the number of guests, the reservationID, and the guestID of the guest who registered for the activity. 
-The resort offers a kids’ club which has a capacity, a contact email and phone number, and a rating. This is represented by the KidClub entity and its attributes. The kids’ club for the resort services the resort’s multiple hotels; therefore, there is a one-to-many relationship between the KidClub and Hotel entities.
 
-Lastly, there is a transportation entity that represents the transportation services associated with the resort. The resort provides shuttles, bikes, buses, and a specialty limo service for guest transportation. The resort has also partnered with Uber and Lyft to offer rides to customers at a discounted rate. This is all reflected in the transportation entity that has a many to one relationship with the Hotel entity because the Hotel has many transporters, but each transporter is mapped to a certain hotel.
 
 
 ![Screen Shot 2023-03-30 at 9 42 10 PM](https://user-images.githubusercontent.com/128402101/229001455-ddc3361b-422f-483c-b4d8-01edc47e4afa.png)
