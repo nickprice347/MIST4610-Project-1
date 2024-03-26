@@ -72,6 +72,11 @@ Additionally, the coaches entity has a one to many relationship with the court r
 
 ## Queries:
 
+
+<img width="437" alt="querychart" src="https://github.com/nickprice347/MIST4610-Project-1/assets/163012519/f499139d-f099-4d1b-9a7d-27258c4e3460">
+
+
+
 Query 1 Description:
 
 Query 1 lists the ID of the members who have not made any court reservations at the time. 
