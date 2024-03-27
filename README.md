@@ -110,10 +110,15 @@ Query 4 Description:
 
 Query 4 lists the total transaction value for members whose individual total transaction value exceeds the average total transaction value across all members. 
 
-<img width="838" alt="Screenshot 2024-03-26 at 6 11 26 PM" src="https://github.com/avanish-thota27/MIST4610GroupProject01/assets/152564332/a25ed783-fe07-4ee0-88b3-66d7d8b01f7c">
+<img width="869" alt="Screenshot 2024-03-27 at 2 50 09 PM" src="https://github.com/sydneyseid/MIST-4610-Project-1/assets/163012786/6bb0c008-ed1d-4914-96cb-d71b1d35135f">
+
+
+
+
 
 
 Contemporary marketing strategies to maximize consumer loyalty and profit earnings place heavy emphasis on marketing toward the most loyal, highest-spending individuals. Such marketing tactics may include personalized promotions, discounts, or incentives that could sway loyal members to spend even more. Cultivating such strong relationships with said members, may attract new members who aspire to receive similar treatment.  
+
 
 
 
